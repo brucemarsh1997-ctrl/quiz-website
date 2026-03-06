@@ -1,0 +1,63 @@
+:root {
+    --primary: #4255ff; /* Quizlet Blue */
+    --correct: #23b26d;
+    --wrong: #ff725e;
+    --bg: #f6f7fb;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.quiz-container {
+    background: white;
+    width: 90%;
+    max-width: 600px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+h2 { margin-bottom: 1.5rem; color: #303545; }
+
+.options-container {
+    display: grid;
+    gap: 10px;
+}
+
+.btn {
+    padding: 15px;
+    border: 2px solid #edeff4;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.2s;
+    text-align: left;
+}
+
+.btn:hover { background-color: #f0f2ff; border-color: var(--primary); }
+
+.correct { background-color: var(--correct) !important; color: white; border-color: var(--correct); }
+.wrong { background-color: var(--wrong) !important; color: white; border-color: var(--wrong); }
+
+.next-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hide { display: none; }
